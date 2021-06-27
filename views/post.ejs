@@ -1,0 +1,109 @@
+<%- include("partials/header"); -%>
+
+<section class="white-space" id="body-section">
+
+  <div class="container_home">
+    <% function timeConverter(UNIX_timestamp){ %>
+    <% var a = new Date(UNIX_timestamp * 1000); %>
+    <% var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; %>
+    <% var year = a.getFullYear(); %>
+    <% var month = months[a.getMonth()]; %>
+    <% var date = a.getDate(); %>
+    <% var hour = a.getHours(); %>
+    <% var min = a.getMinutes(); %>
+    <% var sec = a.getSeconds(); %>
+    <% var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ; %>
+    <% return time; %>
+    <% } %>
+
+<div class="container-body containeratpost">
+  <h1>
+  <img src="/placeholder.png" alt="">
+  <%= weatherData.city.name %>,
+<%= weatherData.city.country%>
+
+  </h1>
+  <p><%=timeConverter(weatherData.list[hender].dt)%>0</p>
+<div class="today_weather">
+  <table>
+    <tr>
+      <td class="location"><h1>
+    <img src="http://openweathermap.org/img/wn/<%=weatherData.list[hender].weather[0].icon%>@2x.png" >
+        <%= weatherData.list[hender].main.temp%>℃
+      </h1></td>
+      <td class="tabledata">  <p><%=weatherData.list[hender].weather[0].description%></p>
+        <p><%=weatherData.list[hender].main.temp_min%>℃/<%=weatherData.list[0].main.temp_max%>℃</p>
+        <br>
+        <p>Feels like <%=weatherData.list[hender].main.feels_like %>℃</p></td>
+    </tr>
+  </table>
+
+</div>
+
+
+
+
+  <section class="cursole" id="testimonials">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <a href="/post/1">
+      <p><%=timeConverter(weatherData.list[1].dt)%>0</p>
+        <img src="http://openweathermap.org/img/wn/<%=weatherData.list[1].weather[0].icon%>@2x.png" >
+      <h1><%= weatherData.list[1].main.temp%> ℃</h1>
+    </a>
+
+  </div>
+  <div class="carousel-item">
+    <a href="/post/2">
+      <p><%=timeConverter(weatherData.list[2].dt)%>0</p>
+    <img src="http://openweathermap.org/img/wn/<%=weatherData.list[2].weather[0].icon%>@2x.png" >
+    <h1><%= weatherData.list[2].main.temp%> ℃</h1>
+    </a>
+  </div>
+  <div class="carousel-item">
+    <a href="/post/3">
+      <p><%=timeConverter(weatherData.list[3].dt)%>0</p>
+      <img src="http://openweathermap.org/img/wn/<%=weatherData.list[3].weather[0].icon%>@2x.png" >
+    <h1><%= weatherData.list[3].main.temp%> ℃</h1>
+    </a>
+  </div>
+  <div class="carousel-item">
+    <a href="/post/4">
+      <p><%=timeConverter(weatherData.list[4].dt)%>0</p>
+      <img src="http://openweathermap.org/img/wn/<%=weatherData.list[4].weather[0].icon%>@2x.png" >
+  <h1><%= weatherData.list[4].main.temp%> ℃</h1>
+  </a>
+  </div>
+  <div class="carousel-item">
+    <a href="/post/5">
+      <p><%=timeConverter(weatherData.list[5].dt)%>0</p>
+      <img src="http://openweathermap.org/img/wn/<%=weatherData.list[5].weather[0].icon%>@2x.png" >
+    <h1><%= weatherData.list[5].main.temp%> ℃</h1>
+    </a>
+  </div>
+  <div class="carousel-item">
+    <a href="/post/6">
+      <p><%=timeConverter(weatherData.list[6].dt)%>0</p>
+      <img src="http://openweathermap.org/img/wn/<%=weatherData.list[6].weather[0].icon%>@2x.png" >
+  <h1><%= weatherData.list[6].main.temp%> ℃</h1>
+  </a>
+  </div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+
+    </section>
+</div>
+  </div>
+</section>
+
+<%- include("partials/footer"); -%>

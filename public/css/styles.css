@@ -1,0 +1,158 @@
+/* article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+} */
+.container-fluid {
+    padding: 2% 15%;
+}
+.container-header{
+  padding: 2% 15%;
+}
+a, a:visited, a:active {
+  color: inherit;
+}
+
+.navbar-nav{
+  display: inline;
+}
+.navibar {
+  font-family: "Montserrat";
+  text-decoration: none;
+  position: relative;
+  top: 0;
+  width: 100%;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #E8F0F2;
+    list-style: none;
+}
+.navibar-header{
+  width: 120%;
+}
+.navbar-brand{
+  padding-right: 30%;
+}
+ a:hover {
+    color: #1abc9c !important;
+}
+.list{
+  padding: 3% 3%;
+}
+.logo{
+  height: 50px;
+  width: 80px;
+  text-align: left;
+  float: left;
+  margin-right: 10px;
+}
+.form{
+  /* margin: 50px auto; */
+  width: 25%;
+  display: inline;
+}
+.white-space{
+  height: 800px;
+  background-image: -webkit-linear-gradient(65deg, #9DF3C4 50%, #D7FBE8 50%);
+  /* position: relative; */
+}
+.container_home{
+
+  padding: 7% 15%;
+
+}
+
+#body-section{
+  position: relative;
+}
+
+.container-body{
+  margin: 100px auto;
+  padding: 10px 10px 0 50px ;
+  background-color: #62D2A2;
+  min-height: 450px;
+    min-width: 450px;
+  width: 60%;
+  min-width: 430px;
+  color: #fff;
+
+  border-radius: 2%;
+}
+.containerathome{
+  text-align: center;
+  padding-top: 80px;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-bottom: 30px;
+}
+.container-body p{
+  font-size: 20px;
+  letter-spacing: 1;
+}
+
+.containeratcontact{
+  margin-top: 0px;
+  height: 500px;
+}
+.containeratpost{
+  margin-top: 0px;
+  height: 500px;
+}
+.boode{
+  margin: 0;
+}
+.container-footer{
+  padding-top: 5%;
+  background-color: #1FAB89;
+    font-size: 20px;
+}
+.location{
+  width: 250px;
+}
+.today_weather h1{
+  display: inline;
+}
+.today_weather p{
+  display: inline;
+}
+
+.tabledata{
+  padding-left: 15%;
+}
+.go{
+  margin-left:  15px;
+}
+.cursole{
+  padding-top: 30px;
+  text-align: center;
+  line-spacing: 1;
+}
+
+.footer {
+margin: 0;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+
+
+}
+.container-footer{
+  padding-bottom: 30px;
+}
+.footer p {
+	margin-top: 25px;
+	font-size: 20px;
+  color: #fff;
+}
+@media (max-width: 1253px) {
+
+.location{
+  width: 125px;
+}
+  .container-body{
+    padding: 10px 10px 0 20px;
+  }
+
+
+}
